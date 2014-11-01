@@ -322,7 +322,7 @@ class Artist(object):
             ax = getattr(a, 'axes', None)
             if mouseevent.inaxes is None or mouseevent.inaxes==ax:
                 # we need to check if mouseevent.inaxes is None
-                # because some objects associated with an axes (eg a
+                # because some objects associated with an axes (e.g. a
                 # tick label) can be outside the bounding box of the
                 # axes and inaxes will be None
                 a.pick(mouseevent)
@@ -738,7 +738,7 @@ class Artist(object):
 
           - function with signature ``boolean = match(artist)`` used to filter matches
 
-          - class instance: eg Line2D.  Only return artists of class type
+          - class instance: e.g. Line2D.  Only return artists of class type
 
         .. plot:: mpl_examples/pylab_examples/findobj_demo.py
         """
@@ -1050,7 +1050,7 @@ class ArtistInspector:
 
           - function with signature ``boolean = match(artist)``
 
-          - class instance: eg :class:`~matplotlib.lines.Line2D`
+          - class instance: e.g. :class:`~matplotlib.lines.Line2D`
 
         used to filter matches.
         """
@@ -1092,7 +1092,7 @@ def getp(obj, property=None):
         getp(obj)  # get all the object properties
         getp(obj, 'linestyle')  # get the linestyle property
 
-    *obj* is a :class:`Artist` instance, eg
+    *obj* is a :class:`Artist` instance, e.g.
     :class:`~matplotllib.lines.Line2D` or an instance of a
     :class:`~matplotlib.axes.Axes` or :class:`matplotlib.text.Text`.
     If the *property* is 'somename', this function returns

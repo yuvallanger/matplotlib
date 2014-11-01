@@ -326,7 +326,7 @@ class DstTzInfo(BaseTzInfo):
 
         # If we get this far, we have in a wierd timezone transition
         # where the clocks have been wound back but is_dst is the same
-        # in both (eg. Europe/Warsaw 1915 when they switched to CET).
+        # in both (e.g. Europe/Warsaw 1915 when they switched to CET).
         # At this point, we just have to guess unless we allow more
         # hints to be passed in (such as the UTC offset or abbreviation),
         # but that is just getting silly.

@@ -241,7 +241,7 @@ PyMODINIT_FUNC
   PyObject* m;
 
   m = Py_InitModule3("nxutils", module_methods,
-                     "general purpose numerical utilities, eg for computational geometry, that are not available in `numpy <http://numpy.scipy.org>`_");
+                     "general purpose numerical utilities, e.g. for computational geometry, that are not available in `numpy <http://numpy.scipy.org>`_");
 
   if (m == NULL)
     return;

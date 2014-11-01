@@ -157,7 +157,7 @@ If you agree to author a unit, remove the question mark by your name
 "has author".  Once you have completed draft and checked it in, you
 can change the status to "submitted" and try to find a reviewer if you
 don't have one.  The reviewer should read your chapter, test it for
-correctness (eg try your examples) and change the status to "complete"
+correctness (e.g. try your examples) and change the status to "complete"
 when done.
 
 You are free to lift and convert as much material from the web site or
@@ -166,7 +166,7 @@ the existing latex user's guide as you see fit.  The more the better.
 The UI chapters should give an example or two of using mpl with your
 GUI and any relevant info, such as version, installation, config,
 etc...  The backend chapters should cover backend specific
-configuration (eg PS only options), what features are missing, etc...
+configuration (e.g. PS only options), what features are missing, etc...
 
 Please feel free to add units, volunteer to review or author a
 chapter, etc...
@@ -204,7 +204,7 @@ minor things to close the book on this chapter:
      user's guide out. - MGD
 
 #. This section might also benefit from a little more detail on the
-   customizations that are possible (eg an example fleshing out the rc
+   customizations that are possible (e.g. an example fleshing out the rc
    options a little bit).  Admittedly, this is pretty clear from
    readin ghte rc file, but it might be helpful to a newbie.
 

@@ -15,7 +15,7 @@ Tick locating
 The Locator class is the base class for all tick locators.  The
 locators handle autoscaling of the view limits based on the data
 limits, and the choosing of tick locations.  A useful semi-automatic
-tick locator is MultipleLocator.  You initialize this with a base, eg
+tick locator is MultipleLocator.  You initialize this with a base, e.g.
 10, and it picks axis limits and ticks that are multiples of your
 base.
 
@@ -28,7 +28,7 @@ The Locator subclasses defined here are
     Tick locations are fixed
 
 :class:`IndexLocator`
-    locator for index plots (eg. where x = range(len(y)))
+    locator for index plots (e.g. where x = range(len(y)))
 
 :class:`LinearLocator`
     evenly spaced ticks from min to max
@@ -67,7 +67,7 @@ methods are::
   ax.yaxis.set_major_locator( ymajorLocator )
   ax.yaxis.set_minor_locator( yminorLocator )
 
-The default minor locator is the NullLocator, eg no minor ticks on by
+The default minor locator is the NullLocator, e.g. no minor ticks on by
 default.
 
 Tick formatting
@@ -198,7 +198,7 @@ class Formatter(TickHelper):
         <http://sourceforge.net/tracker/index.php?func=detail&aid=1962574&group_id=80706&atid=560720>`_.
         The default is to do nothing
 
-        Note, if you use this method, eg in :meth`format_data` or
+        Note, if you use this method, e.g. in :meth`format_data` or
         call, you probably don't want to use it for
         :meth:`format_data_short` since the toolbar uses this for
         interative coord reporting and I doubt we can expect GUIs
@@ -665,7 +665,7 @@ class LogFormatterMathtext(LogFormatter):
 class EngFormatter(Formatter):
     """
     Formats axis values using engineering prefixes to represent powers of 1000,
-    plus a specified unit, eg. 10 MHz instead of 1e7.
+    plus a specified unit, e.g. 10 MHz instead of 1e7.
     """
 
     # The SI engineering prefixes
@@ -758,7 +758,7 @@ class Locator(TickHelper):
     """
 
     # some automatic tick locators can generate so many ticks they
-    # kill the machine when you try and render them, see eg sf bug
+    # kill the machine when you try and render them, see e.g. sf bug
     # report
     # https://sourceforge.net/tracker/index.php?func=detail&aid=2715172&group_id=80706&atid=560720.
     # This parameter is set to cause locators to raise an error if too
@@ -822,7 +822,7 @@ class Locator(TickHelper):
 class IndexLocator(Locator):
     """
     Place a tick on every multiple of some base number of points
-    plotted, eg on every 5th point.  It is assumed that you are doing
+    plotted, e.g. on every 5th point.  It is assumed that you are doing
     index plotting; ie the axis is 0, len(data).  This is mainly
     useful for x ticks.
     """

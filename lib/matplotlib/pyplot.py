@@ -1079,7 +1079,7 @@ def xlim(*args, **kwargs):
       xlim( xmin, xmax )    # set the xlim to xmin, xmax
 
     If you do not specify args, you can pass the xmin and xmax as
-    kwargs, eg.::
+    kwargs, e.g.::
 
       xlim(xmax=3) # adjust the max leaving min unchanged
       xlim(xmin=1) # adjust the min leaving max unchanged
@@ -1106,7 +1106,7 @@ def ylim(*args, **kwargs):
       ylim( ymin, ymax )    # set the ylim to ymin, ymax
 
     If you do not specify args, you can pass the *ymin* and *ymax* as
-    kwargs, eg.::
+    kwargs, e.g.::
 
       ylim(ymax=3) # adjust the max leaving min unchanged
       ylim(ymin=1) # adjust the min leaving max unchanged
@@ -1581,7 +1581,7 @@ def clim(vmin=None, vmax=None):
     """
     im = gci()
     if im is None:
-        raise RuntimeError('You must first define an image, eg with imshow')
+        raise RuntimeError('You must first define an image, e.g. with imshow')
 
     im.set_clim(vmin, vmax)
     draw_if_interactive()
@@ -1697,7 +1697,7 @@ def plotfile(fname, cols=(0,), plotfuncs=None,
     an :class:`~matplotlib.axes.Axes` plotting function as a string.
     Default is 'plot', other choices are 'semilogy', 'fill', 'bar',
     etc.  You must use the same type of identifier in the *cols*
-    vector as you use in the *plotfuncs* dictionary, eg., integer
+    vector as you use in the *plotfuncs* dictionary, e.g., integer
     column numbers in both or column names in both. If *subplots*
     is *False*, then including any function such as 'semilogy'
     that changes the axis scaling will set the scaling for all

@@ -2,7 +2,7 @@
 """
 
 You can enable picking by setting the"picker" property of an artist
-(eg a matplotlib Line2D, Text, Patch, Polygon, AxesImage,
+(e.g. a matplotlib Line2D, Text, Patch, Polygon, AxesImage,
 etc...)
 
 There are a variety of meanings of the picker property
@@ -18,7 +18,7 @@ There are a variety of meanings of the picker property
       off an event if it's data is within epsilon of the mouse
       event.  For some artists like lines and patch collections,
       the artist may provide additional data to the pick event
-      that is generated, eg the indices of the data within
+      that is generated, e.g. the indices of the data within
       epsilon of the pick event
 
      function - if picker is callable, it is a user supplied
@@ -47,7 +47,7 @@ your callback is always fired with two attributes:
 
   mouseevent - the mouse event that generate the pick event.  The
     mouse event in turn has attributes like x and y (the coords in
-    display space, eg pixels from left, bottom) and xdata, ydata (the
+    display space, e.g. pixels from left, bottom) and xdata, ydata (the
     coords in data space).  Additionaly, you can get information about
     which buttons were pressed, which keys were pressed, which Axes
     the mouse is over, etc.  See matplotlib.backend_bases.MouseEvent
@@ -57,7 +57,7 @@ your callback is always fired with two attributes:
 
 Additionally, certain artists like Line2D and PatchCollection may
 attach additional meta data like the indices into the data that meet
-the picker criteria (eg all the points in the line that are within the
+the picker criteria (e.g. all the points in the line that are within the
 specified epsilon tolerance)
 
 The examples below illustrate each of these methods.

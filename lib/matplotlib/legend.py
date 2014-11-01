@@ -485,7 +485,7 @@ in the normalized axes coordinate.
 
         # The transformation of each handle will be automatically set
         # to self.get_trasnform(). If the artist does not uses its
-        # default trasnform (eg, Collections), you need to
+        # default trasnform (e.g., Collections), you need to
         # manually set their transform to the self.get_transform().
 
 

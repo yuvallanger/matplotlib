@@ -194,7 +194,7 @@ If you get an error like::
       File "<string>", line 1, in <module>
     ImportError: No module named matplotlib
 
-then you will need to set your PYTHONPATH, eg::
+then you will need to set your PYTHONPATH, e.g.::
 
     export PYTHONPATH=/Library/Python/2.5/site-packages:$PYTHONPATH
 
@@ -311,7 +311,7 @@ If you have already installed python, you can use one of the
 matplotlib binary installers for windows -- you can get these from the
 `sourceforge download
 <http://sourceforge.net/project/platformdownload.php?group_id=80706>`_
-site.  Choose the files that match your version of python (eg
+site.  Choose the files that match your version of python (e.g.
 ``py2.5`` if you installed Python 2.5) which have the ``exe``
 extension.  If you haven't already installed python, you can get the
 official version from the `python web site

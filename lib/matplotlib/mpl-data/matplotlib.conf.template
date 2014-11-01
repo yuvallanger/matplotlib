@@ -25,7 +25,7 @@
 #  - an rgb tuple, such as (1.0, 0.5, 0.0)
 #  - a hex string, such as #ff00ff or ff00ff
 #  - a scalar grayscale intensity such as 0.75
-#  - a legal html color name, eg red | blue | darkslategray
+#  - a legal html color name, e.g. red | blue | darkslategray
 #
 # Interactivity: see http://matplotlib.sourceforge.net/interactive.html.
 #
@@ -55,11 +55,11 @@ units = False
 [axes]
     # a boolean
     axisbelow = False
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     edgecolor = 'black'
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     facecolor = 'white'
@@ -67,7 +67,7 @@ units = False
     grid = False
     # one of: 0 | on | false | 1 | no | n | y | off | yes | true
     hold = True
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     labelcolor = 'black'
@@ -147,11 +147,11 @@ units = False
 [figure]
     # a float
     dpi = 80
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     edgecolor = 'white'
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     facecolor = '0.75'
@@ -202,7 +202,7 @@ units = False
     weight = 'normal'
 
 [grid]
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     color = 'black'
@@ -265,7 +265,7 @@ units = False
 [lines]
     # a boolean
     antialiased = True
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     color = 'blue'
@@ -317,11 +317,11 @@ units = False
 [patch]
     # a boolean
     antialiased = True
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     edgecolor = 'black'
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     facecolor = 'blue'
@@ -331,11 +331,11 @@ units = False
 [savefig]
     # a float
     dpi = 100
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     edgecolor = 'white'
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     facecolor = 'white'
@@ -343,7 +343,7 @@ units = False
     orientation = 'portrait'
 
 [text]
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     color = 'black'
@@ -367,7 +367,7 @@ units = False
     level = 'silent'
 
 [xticks]
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     color = 'black'
@@ -390,7 +390,7 @@ units = False
         size = 2
 
 [yticks]
-    # any valid matplotlib color, eg an abbreviation like 'r' for red, a full
+    # any valid matplotlib color, e.g. an abbreviation like 'r' for red, a full
     # name like 'orange', a hex color like '#efefef', a grayscale intensity
     # like '0.5', or an RGBA tuple (1,0,0,1)
     color = 'black'

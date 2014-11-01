@@ -76,11 +76,11 @@ docstring.interpd.update(Text =  """
     linespacing                float
     lod                        [True | False]
     multialignment             ['left' | 'right' | 'center' ]
-    name or fontname           string eg, ['Sans' | 'Courier' | 'Helvetica' ...]
+    name or fontname           string e.g., ['Sans' | 'Courier' | 'Helvetica' ...]
     position                   (x,y)
     rotation                   [ angle in degrees 'vertical' | 'horizontal'
     rotation_mode              [ None | 'anchor']
-    size or fontsize           [ size in points | relative size eg 'smaller', 'x-large' ]
+    size or fontsize           [ size in points | relative size e.g. 'smaller', 'x-large' ]
     style or fontstyle         [ 'normal' | 'italic' | 'oblique']
     text                       string
     transform                  a matplotlib.transform transformation instance
@@ -422,7 +422,7 @@ class Text(Artist):
     def set_bbox(self, rectprops):
         """
         Draw a bounding box around self.  rectprops are any settable
-        properties for a rectangle, eg facecolor='red', alpha=0.5.
+        properties for a rectangle, e.g. facecolor='red', alpha=0.5.
 
           t.set_bbox(dict(facecolor='red', alpha=0.5))
 
@@ -684,7 +684,7 @@ class Text(Artist):
         Return a hashable tuple of properties.
 
         Not intended to be human readable, but useful for backends who
-        want to cache derived information about text (eg layouts) and
+        want to cache derived information about text (e.g. layouts) and
         need to know if the text has changed.
         """
         x, y = self.get_position()
@@ -1119,7 +1119,7 @@ class TextWithDash(Text):
         Return a hashable tuple of properties.
 
         Not intended to be human readable, but useful for backends who
-        want to cache derived information about text (eg layouts) and
+        want to cache derived information about text (e.g. layouts) and
         need to know if the text has changed.
         """
         props = [p for p in Text.get_prop_tup(self)]

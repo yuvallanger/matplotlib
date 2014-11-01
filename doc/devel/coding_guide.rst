@@ -66,10 +66,10 @@ We prefer this over the equivalent ``from matplotlib import cbook``
 because the latter is ambiguous as to whether ``cbook`` is a module or a
 function.  The former makes it explicit that you
 are importing a module or package.  There are some modules with names
-that match commonly used local variable names, eg
+that match commonly used local variable names, e.g.
 :mod:`matplotlib.lines` or :mod:`matplotlib.colors`. To avoid the clash,
 use the prefix 'm' with the ``import some.thing as
-mthing`` syntax, eg::
+mthing`` syntax, e.g.::
 
     import matplotlib.lines as mlines
     import matplotlib.transforms as transforms   # OK
@@ -239,7 +239,7 @@ Eg. in :class:`matplotlib.lines.Line2D`::
       ACCEPTS: [ '-' | '--' | '-.' | ':' | 'steps' | 'None' | ' ' | '' ]
       """
 
-Since matplotlib uses a lot of pass-through ``kwargs``, eg. in every
+Since matplotlib uses a lot of pass-through ``kwargs``, e.g. in every
 function that creates a line (:func:`~matplotlib.pyplot.plot`,
 :func:`~matplotlib.pyplot.semilogx`,
 :func:`~matplotlib.pyplot.semilogy`, etc...), it can be difficult for
@@ -265,7 +265,7 @@ docstring of ``kwargs``.  Here is an example from
   artist.kwdocd['Line2D'] = artist.kwdoc(Line2D)
 
 Then in any function accepting :class:`~matplotlib.lines.Line2D`
-pass-through ``kwargs``, eg. :meth:`matplotlib.axes.Axes.plot`::
+pass-through ``kwargs``, e.g. :meth:`matplotlib.axes.Axes.plot`::
 
   # in axes.py
   def plot(self, *args, **kwargs):
@@ -284,7 +284,7 @@ pass-through ``kwargs``, eg. :meth:`matplotlib.axes.Axes.plot`::
   plot.__doc__ = cbook.dedent(plot.__doc__) % artist.kwdocd
 
 Note there is a problem for :class:`~matplotlib.artist.Artist`
-``__init__`` methods, eg. :meth:`matplotlib.patches.Patch.__init__`,
+``__init__`` methods, e.g. :meth:`matplotlib.patches.Patch.__init__`,
 which supports ``Patch`` ``kwargs``, since the artist inspector cannot
 work until the class is fully defined and we can't modify the
 ``Patch.__init__.__doc__`` docstring outside the class definition.
@@ -403,7 +403,7 @@ The script can take any of the usual `nosetest arguments`_, such as
 
 To run a single test from the command line, you can provide a
 dot-separated path to the module followed by the function separated by
-a colon, eg.  (this is assuming the test is installed)::
+a colon, e.g.  (this is assuming the test is installed)::
 
   python tests.py matplotlib.tests.test_simplification:test_clipping
 
@@ -527,7 +527,7 @@ distributing L/GPL code through an separate channel, possibly a
 toolkit.  If you include code, make sure you include a copy of that
 code's license in the license directory if the code's license requires
 you to distribute the license with it.  Non-BSD compatible licenses
-are acceptable in matplotlib toolkits (eg basemap), but make sure you
+are acceptable in matplotlib toolkits (e.g. basemap), but make sure you
 clearly state the licenses you are using.
 
 Why BSD compatible?

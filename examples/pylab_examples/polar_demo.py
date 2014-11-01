@@ -16,7 +16,7 @@
 # or a PolarAxes instance by doing
 #   axes([left, bottom, width, height], polar=True)
 #
-# The view limits (eg xlim and ylim) apply to the lower left and upper
+# The view limits (e.g. xlim and ylim) apply to the lower left and upper
 # right of the rectangular box that surrounds to polar axes.  Eg if
 # you have
 #

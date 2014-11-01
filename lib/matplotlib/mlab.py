@@ -1214,7 +1214,7 @@ class FIFOBuffer:
     and plot it to screen less freqeuently than the incoming.
 
     If you set the *dataLim* attr to
-    :class:`~matplotlib.transforms.BBox` (eg
+    :class:`~matplotlib.transforms.BBox` (e.g.
     :attr:`matplotlib.Axes.dataLim`), the *dataLim* will be updated as
     new data come in.
 
@@ -1326,7 +1326,7 @@ def save(fname, X, fmt='%.18e',delimiter=' '):
       save('test2.out', x)        # x is 1D
       save('test3.out', x, fmt='%1.4e')  # use exponential notation
 
-    *delimiter* is used to separate the fields, eg. *delimiter* ','
+    *delimiter* is used to separate the fields, e.g. *delimiter* ','
     for comma-separated values.
     """
 
@@ -1400,7 +1400,7 @@ def load(fname,comments='#',delimiter=None, converters=None,skiprows=0,
     - *skiprows* is the number of rows from the top to skip.
 
     - *usecols*, if not *None*, is a sequence of integer column indexes to
-      extract where 0 is the first column, eg ``usecols=[1,4,5]`` to extract
+      extract where 0 is the first column, e.g. ``usecols=[1,4,5]`` to extract
       just the 2nd, 5th and 6th columns
 
     - *unpack*, if *True*, will transpose the matrix allowing you to unpack
@@ -1837,7 +1837,7 @@ def rec_groupby(r, groupby, stats):
     *r* is a numpy record array
 
     *groupby* is a sequence of record array attribute names that
-    together form the grouping key.  eg ('date', 'productcode')
+    together form the grouping key.  e.g. ('date', 'productcode')
 
     *stats* is a sequence of (*attr*, *func*, *outname*) tuples which
     will call ``x = func(attr)`` and assign *x* to the record array
@@ -2974,7 +2974,7 @@ def poly_below(xmin, xs, ys):
     polygon that has a horizontal base at *xmin* and an upper bound at
     the *ys*.  *xmin* is a scalar.
 
-    Intended for use with :meth:`matplotlib.axes.Axes.fill`, eg::
+    Intended for use with :meth:`matplotlib.axes.Axes.fill`, e.g.::
 
       xv, yv = poly_below(0, x, y)
       ax.fill(xv, yv)
@@ -3059,7 +3059,7 @@ def contiguous_regions(mask):
 def cross_from_below(x, threshold):
     """
     return the indices into *x* where *x* crosses some threshold from
-    below, eg the i's where::
+    below, e.g. the i's where::
 
       x[i-1]<threshold and x[i]>=threshold
 
@@ -3098,7 +3098,7 @@ def cross_from_below(x, threshold):
 def cross_from_above(x, threshold):
     """
     return the indices into *x* where *x* crosses some threshold from
-    below, eg the i's where::
+    below, e.g. the i's where::
 
       x[i-1]>threshold and x[i]<=threshold
 

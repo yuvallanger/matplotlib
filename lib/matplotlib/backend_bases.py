@@ -581,7 +581,7 @@ class RendererBase:
         return points converted to pixels
 
         You need to override this function (unless your backend
-        doesn't have a dpi, eg, postscript or svg).  Some imaging
+        doesn't have a dpi, e.g., postscript or svg).  Some imaging
         systems assume some value for pixels per inch::
 
             points to pixels = points * pixels_per_inch/72.0 * dpi/72.0
@@ -1282,7 +1282,7 @@ class PickEvent(Event):
         the :class:`~matplotlib.artist.Artist` picked
 
     other
-        extra class dependent attrs -- eg a
+        extra class dependent attrs -- e.g. a
         :class:`~matplotlib.lines.Line2D` pick may define different
         extra attributes than a
         :class:`~matplotlib.collections.PatchCollection` pick event
@@ -1983,7 +1983,7 @@ class FigureCanvasBase:
     def set_window_title(self, title):
         """
         Set the title text of the window containing the figure.  Note that
-        this has no effect if there is no window (eg, a PS backend).
+        this has no effect if there is no window (e.g., a PS backend).
         """
         if hasattr(self, "manager"):
             self.manager.set_window_title(title)
@@ -1992,9 +1992,9 @@ class FigureCanvasBase:
         """
         instantiate an instance of FigureCanvasClass
 
-        This is used for backend switching, eg, to instantiate a
+        This is used for backend switching, e.g., to instantiate a
         FigureCanvasPS from a FigureCanvasGTK.  Note, deep copying is
-        not done, so any changes to one of the instances (eg, setting
+        not done, so any changes to one of the instances (e.g., setting
         figure size or line props), will be reflected in the other
         """
         newCanvas = FigureCanvasClass(self.figure)
@@ -2283,7 +2283,7 @@ class FigureManagerBase:
     def set_window_title(self, title):
         """
         Set the title text of the window containing the figure.  Note that
-        this has no effect if there is no window (eg, a PS backend).
+        this has no effect if there is no window (e.g., a PS backend).
         """
         pass
 

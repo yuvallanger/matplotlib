@@ -21,7 +21,7 @@
 #  - an rgb tuple, such as (1.0, 0.5, 0.0)
 #  - a hex string, such as ff00ff  (no '#' symbol)
 #  - a scalar grayscale intensity such as 0.75
-#  - a legal html color name, eg red, blue, darkslategray
+#  - a legal html color name, e.g. red, blue, darkslategray
 
 #### CONFIGURATION BEGINS HERE
 # the default backend; one of GTK GTKAgg GTKCairo FltkAgg QtAgg TkAgg
@@ -32,7 +32,7 @@ backend      : Agg
                            # setting for testing maskedarray.
 #interactive  : False      # see http://matplotlib.sourceforge.net/interactive.html
 #toolbar      : toolbar2   # None | classic | toolbar2
-#timezone     : UTC        # a pytz timezone string, eg US/Central or Europe/Paris
+#timezone     : UTC        # a pytz timezone string, e.g. US/Central or Europe/Paris
 
 # Where your matplotlib data lives if you installed to a non-default
 # location.  This is where the matplotlib fonts, bitmaps, etc reside
@@ -306,7 +306,7 @@ figure.figsize   : 6, 4    # figure size in inches
 #
 # You can override the rc default verbosity from the command line by
 # giving the flags --verbose-LEVEL where LEVEL is one of the legal
-# levels, eg --verbose-helpful.
+# levels, e.g. --verbose-helpful.
 #
 # You can access the verbose instance in your code
 #   from matplotlib import verbose.

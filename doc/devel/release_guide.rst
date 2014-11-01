@@ -25,7 +25,7 @@ Testing
 
 * Run :file:`unit/nose_tests.py` and make sure all the unit tests are passing
 
-* try some GUI examples, eg :file:`simple_plot.py` with GTKAgg, TkAgg, etc...
+* try some GUI examples, e.g. :file:`simple_plot.py` with GTKAgg, TkAgg, etc...
 
 * remove font cache and tex cache from :file:`.matplotlib` and test
   with and without cache on some example script
@@ -124,7 +124,7 @@ Uploading
   then the "File Releases" tab.  Go to the bottom and click "add
   release" and enter the package name but not the version number in
   the "Package Name" box.  You will then be prompted for the "New
-  release name" at which point you can add the version number, eg
+  release name" at which point you can add the version number, e.g.
   somepackage-0.1 and click "Create this release".
 
   You will then be taken to a fairly self explanatory page where you

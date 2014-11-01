@@ -275,7 +275,7 @@ Referring to mpl documents
 In the documentation, you may want to include to a document in the
 matplotlib src, e.g. a license file or an image file from `mpl-data`,
 refer to it via a relative path from the document where the rst file
-resides, eg, in :file:`users/navigation_toolbar.rst`, we refer to the
+resides, e.g., in :file:`users/navigation_toolbar.rst`, we refer to the
 image icons with::
 
     .. image:: ../../lib/matplotlib/mpl-data/images/subplots.png
@@ -305,7 +305,7 @@ So we can include plots from the examples dir using the symlink::
 
 
 We used to use a symlink for :file:`mpl-data` too, but the distro
-becomes very large on platforms that do not support links (eg the font
+becomes very large on platforms that do not support links (e.g. the font
 files are duplicated and large)
 
 .. _internal-section-refs:
@@ -314,7 +314,7 @@ Internal section references
 ===========================
 
 To maximize internal consistency in section labeling and references,
-use hypen separated, descriptive labels for section references, eg::
+use hypen separated, descriptive labels for section references, e.g.::
 
     .. _howto-webapp:
 
@@ -342,7 +342,7 @@ Section names, etc
 ==================
 
 For everything but top level chapters, please use ``Upper lower`` for
-section titles, eg ``Possible hangups`` rather than ``Possible
+section titles, e.g. ``Possible hangups`` rather than ``Possible
 Hangups``
 
 Inheritance diagrams

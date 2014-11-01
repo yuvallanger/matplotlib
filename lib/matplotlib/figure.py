@@ -373,7 +373,7 @@ class Figure(Artist):
           Keyword     Description
           =========   ==========================================================
           xo or yo    An integer, the *x* and *y* image offset in pixels
-          cmap        a :class:`matplotlib.cm.ColorMap` instance, eg cm.jet.
+          cmap        a :class:`matplotlib.cm.ColorMap` instance, e.g. cm.jet.
                       If None, default to the rc ``image.cmap`` value
           norm        a :class:`matplotlib.colors.Normalize` instance. The
                       default is normalization().  This scales luminance -> 0-1
@@ -424,7 +424,7 @@ class Figure(Artist):
              fig.set_size_inches((w,h) )
 
         optional kwarg *forward=True* will cause the canvas size to be
-        automatically updated; eg you can resize the figure window
+        automatically updated; e.g. you can resize the figure window
         from the shell
 
         ACCEPTS: a w,h tuple with w,h in inches
@@ -577,7 +577,7 @@ class Figure(Artist):
 
         If the figure already has an axes with the same parameters,
         then it will simply make that axes current and return it.  If
-        you do not want this behavior, eg. you want to force the
+        you do not want this behavior, e.g. you want to force the
         creation of a new axes, you must use a unique set of args and
         kwargs.  The axes :attr:`~matplotlib.axes.Axes.label`
         attribute has been exposed for this purpose.  Eg., if you want
@@ -1226,7 +1226,7 @@ def figaspect(arg):
     determine the width and height for a figure that would fit array
     preserving aspect ratio.  The figure width, height in inches are
     returned.  Be sure to create an axes with equal with and height,
-    eg
+    e.g.
 
     Example usage::
 

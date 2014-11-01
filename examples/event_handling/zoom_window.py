@@ -1,5 +1,5 @@
 """
-This example shows how to connect events in one window, eg a mouse
+This example shows how to connect events in one window, e.g. a mouse
 press, to another figure window.
 
 If you click on a point in the first window, the z and y limits of the

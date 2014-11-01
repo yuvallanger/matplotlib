@@ -213,7 +213,7 @@ class _process_plot_var_args:
             if self.command!='plot':
                 # the Line2D class can handle unitized data, with
                 # support for post hoc unit changes etc.  Other mpl
-                # artists, eg Polygon which _process_plot_var_args
+                # artists, e.g. Polygon which _process_plot_var_args
                 # also serves on calls to fill, cannot.  So this is a
                 # hack to say: if you are not "plot", which is
                 # creating Line2D, then convert the data now to
@@ -444,7 +444,7 @@ class Axes(martist.Artist):
 
         self.spines = self._gen_axes_spines()
 
-        # this call may differ for non-sep axes, eg polar
+        # this call may differ for non-sep axes, e.g. polar
         self._init_axis()
 
         if axisbg is None: axisbg = rcParams['axes.facecolor']
@@ -1778,7 +1778,7 @@ class Axes(martist.Artist):
     def autoscale_view(self, tight=None, scalex=True, scaley=True):
         """
         Autoscale the view limits using the data limits. You can
-        selectively autoscale only a single axis, eg, the xaxis by
+        selectively autoscale only a single axis, e.g., the xaxis by
         setting *scaley* to *False*.  The autoscaling preserves any
         axis direction reversal that has already been done.
 
@@ -2039,7 +2039,7 @@ class Axes(martist.Artist):
         *which* can be 'major' (default), 'minor', or 'both' to control
         whether major tick grids, minor tick grids, or both are affected.
 
-        *kawrgs* are used to set the grid line properties, eg::
+        *kawrgs* are used to set the grid line properties, e.g.::
 
           ax.grid(color='r', linestyle='-', linewidth=2)
 
@@ -3189,7 +3189,7 @@ class Axes(martist.Artist):
                  verticalalignment='center',
                  transform = ax.transAxes)
 
-       You can put a rectangular box around the text instance (eg. to
+       You can put a rectangular box around the text instance (e.g. to
        set a background color) by using the keyword *bbox*.  *bbox* is
        a dictionary of :class:`matplotlib.patches.Rectangle`
        properties.  For example::
@@ -3269,7 +3269,7 @@ class Axes(martist.Artist):
         Draw a horizontal line at *y* from *xmin* to *xmax*.  With the
         default values of *xmin* = 0 and *xmax* = 1, this line will
         always span the horizontal extent of the axes, regardless of
-        the xlim settings, even if you change them, eg. with the
+        the xlim settings, even if you change them, e.g. with the
         :meth:`set_xlim` command.  That is, the horizontal extent is
         in axes coords: 0=left, 0.5=middle, 1.0=right but the *y*
         location is in data coordinates.
@@ -3334,7 +3334,7 @@ class Axes(martist.Artist):
         Draw a vertical line at *x* from *ymin* to *ymax*.  With the
         default values of *ymin* = 0 and *ymax* = 1, this line will
         always span the vertical extent of the axes, regardless of the
-        ylim settings, even if you change them, eg. with the
+        ylim settings, even if you change them, e.g. with the
         :meth:`set_ylim` command.  That is, the vertical extent is in
         axes coords: 0=bottom, 0.5=middle, 1.0=top but the *x* location
         is in data coordinates.
@@ -3402,7 +3402,7 @@ class Axes(martist.Artist):
         Draw a horizontal span (rectangle) from *ymin* to *ymax*.
         With the default values of *xmin* = 0 and *xmax* = 1, this
         always spans the xrange, regardless of the xlim settings, even
-        if you change them, eg. with the :meth:`set_xlim` command.
+        if you change them, e.g. with the :meth:`set_xlim` command.
         That is, the horizontal extent is in axes coords: 0=left,
         0.5=middle, 1.0=right but the *y* location is in data
         coordinates.
@@ -3459,7 +3459,7 @@ class Axes(martist.Artist):
         Draw a vertical span (rectangle) from *xmin* to *xmax*.  With
         the default values of *ymin* = 0 and *ymax* = 1, this always
         spans the yrange, regardless of the ylim settings, even if you
-        change them, eg. with the :meth:`set_ylim` command.  That is,
+        change them, e.g. with the :meth:`set_ylim` command.  That is,
         the vertical extent is in axes coords: 0=bottom, 0.5=middle,
         1.0=top but the *y* location is in data coordinates.
 
@@ -6378,7 +6378,7 @@ class Axes(martist.Artist):
         The same color strings that :func:`~matplotlib.pyplot.plot`
         supports are supported by the fill format string.
 
-        If you would like to fill below a curve, eg. shade a region
+        If you would like to fill below a curve, e.g. shade a region
         between 0 and *y* along *x*, use :meth:`fill_between`
 
         The *closed* kwarg will close the polygon when *True* (default).
@@ -6676,7 +6676,7 @@ class Axes(martist.Artist):
         Keyword arguments:
 
           *cmap*: [ None | Colormap ]
-            A :class:`matplotlib.cm.Colormap` instance, eg. cm.jet.
+            A :class:`matplotlib.cm.Colormap` instance, e.g. cm.jet.
             If *None*, default to rc ``image.cmap`` value.
 
             *cmap* is ignored when *X* has RGB(A) information
@@ -8403,13 +8403,13 @@ class SubplotBase:
 
 
     def get_geometry(self):
-        'get the subplot geometry, eg 2,2,3'
+        'get the subplot geometry, e.g. 2,2,3'
         rows, cols, num1, num2 = self.get_subplotspec().get_geometry()
         return rows, cols, num1+1 # for compatibility
 
     # COVERAGE NOTE: Never used internally or from examples
     def change_geometry(self, numrows, numcols, num):
-        'change subplot geometry, eg. from 1,1,1 to 2,2,3'
+        'change subplot geometry, e.g. from 1,1,1 to 2,2,3'
         self._subplotspec = GridSpec(numrows, numcols)[num-1]
         self.update_params()
         self.set_position(self.figbox)

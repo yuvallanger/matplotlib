@@ -787,11 +787,11 @@ rcParams['text.usetex'] = checkdep_usetex(rcParams['text.usetex'])
 
 def rc(group, **kwargs):
     """
-    Set the current rc params.  Group is the grouping for the rc, eg.
+    Set the current rc params.  Group is the grouping for the rc, e.g.
     for ``lines.linewidth`` the group is ``lines``, for
     ``axes.facecolor``, the group is ``axes``, and so on.  Group may
-    also be a list or tuple of group names, eg. (*xtick*, *ytick*).
-    *kwargs* is a dictionary attribute name/value pairs, eg::
+    also be a list or tuple of group names, e.g. (*xtick*, *ytick*).
+    *kwargs* is a dictionary attribute name/value pairs, e.g.::
 
       rc('lines', linewidth=2, color='r')
 
@@ -894,9 +894,9 @@ def use(arg, warn=True):
     the first time; or, if you are not using pylab, it must be called
     before importing matplotlib.backends.  If warn is True, a warning
     is issued if you try and callthis after pylab or pyplot have been
-    loaded.  In certain black magic use cases, eg
+    loaded.  In certain black magic use cases, e.g.
     pyplot.switch_backends, we are doing the reloading necessary to
-    make the backend switch work (in some cases, eg pure image
+    make the backend switch work (in some cases, e.g. pure image
     backends) so one can set warn=False to supporess the warnings
     """
     if 'matplotlib.backends' in sys.modules:
@@ -924,7 +924,7 @@ def interactive(b):
     """
     Set interactive mode to boolean b.
 
-    If b is True, then draw after every plotting command, eg, after xlabel
+    If b is True, then draw after every plotting command, e.g., after xlabel
     """
     rcParams['interactive'] = b
 
@@ -952,7 +952,7 @@ for s in sys.argv[1:]:
             use(s[2:])
         except (KeyError, ValueError):
             pass
-        # we don't want to assume all -d flags are backends, eg -debug
+        # we don't want to assume all -d flags are backends, e.g. -debug
 
 default_test_modules = [
     'matplotlib.tests.test_agg',

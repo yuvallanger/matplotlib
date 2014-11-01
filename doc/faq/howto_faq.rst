@@ -21,7 +21,7 @@ Find all objects in a figure of a certain type
 Every matplotlib artist (see :ref:`artist-tutorial`) has a method
 called :meth:`~matplotlib.artist.Artist.findobj` that can be used to
 recursively search the artist for any artists it may contain that meet
-some criteria (eg match all :class:`~matplotlib.lines.Line2D`
+some criteria (e.g. match all :class:`~matplotlib.lines.Line2D`
 instances or match some arbitrary filter function).  For example, the
 following snippet finds every object in the figure which has a
 `set_color` property and makes the object blue::
@@ -47,7 +47,7 @@ Save transparent figures
 The :meth:`~matplotlib.pyplot.savefig` command has a keyword argument
 *transparent* which, if True, will make the figure and axes
 backgrounds transparent when saving, but will not affect the displayed
-image on the screen.  If you need finer grained control, eg you do not
+image on the screen.  If you need finer grained control, e.g. you do not
 want full transparency or you to affect the screen displayed version
 as well, you can set the alpha properties directly.  The figure has a
 :class:`matplotlib.patches.Rectangle` instance called *patch*
@@ -62,7 +62,7 @@ any property on them directly (*facecolor*, *edgecolor*, *linewidth*,
 
 If you need *all* the figure elements to be transparent, there is
 currently no global alpha setting, but you can set the alpha channel
-on individual elements, eg::
+on individual elements, e.g.::
 
    ax.plot(x, y, alpha=0.5)
    ax.set_xlabel('volts', alpha=0.5)
@@ -170,7 +170,7 @@ this chicken and egg problem is to wait until the figure is draw by
 connecting
 (:meth:`matplotlib.backend_bases.FigureCanvasBase.mpl_connect`) to the
 "on_draw" signal (:class:`~matplotlib.backend_bases.DrawEvent`) and
-get the window extent there, and then do something with it, eg move
+get the window extent there, and then do something with it, e.g. move
 the left of the canvas over; see :ref:`event-handling-tutorial`.
 
 Here is an example that gets a bounding box in relative figure coordinates
@@ -228,10 +228,10 @@ setting in the right subplots.
 Skip dates where there is no data
 -------------------------------------
 
-When plotting time series, eg financial time series, one often wants
-to leave out days on which there is no data, eg weekends.  By passing
+When plotting time series, e.g. financial time series, one often wants
+to leave out days on which there is no data, e.g. weekends.  By passing
 in dates on the x-xaxis, you get large horizontal gaps on periods when
-there is not data. The solution is to pass in some proxy x-data, eg
+there is not data. The solution is to pass in some proxy x-data, e.g.
 evenly sampled indices, and then use a custom formatter to format
 these as dates. The example below shows how to use an 'index formatter'
 to achieve the desired plot::
@@ -355,7 +355,7 @@ Make a movie
 
 
 If you want to take an animated plot and turn it into a movie, the
-best approach is to save a series of image files (eg PNG) and use an
+best approach is to save a series of image files (e.g. PNG) and use an
 external tool to convert them to a movie.  You can use `mencoder
 <http://www.mplayerhq.hu/DOCS/HTML/en/mencoder.html>`_,
 which is part of the `mplayer <http://www.mplayerhq.hu>`_ suite
@@ -623,7 +623,7 @@ at the end of the page in the sidebar (or `here
 The sphinx website is a good resource for learning sphinx, but we have
 put together a cheat-sheet at :ref:`documenting-matplotlib` which
 shows you how to get started, and outlines the matplotlib conventions
-and extensions, eg for including plots directly from external code in
+and extensions, e.g. for including plots directly from external code in
 your documents.
 
 Once your documentation contributions are working (and hopefully
